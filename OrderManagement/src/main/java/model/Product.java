@@ -1,11 +1,24 @@
 package model;
 
+/**
+ * @Author: Fetcu Marcos Dimitris
+ * TP Assignment3
+ * @Since: May 18, 2023
+ */
 public class Product
 {
     private int id;
     private String name;
     private Double price;
     private int currentStock;
+
+    /**
+     * This is the constructor for a product. This class only has setters and getters
+     * @param id
+     * @param name
+     * @param price
+     * @param currentStock
+     */
 
     public Product(int id, String name, Double price, int currentStock)
     {

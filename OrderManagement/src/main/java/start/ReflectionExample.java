@@ -2,6 +2,10 @@ package start;
 
 import java.lang.reflect.Field;
 
+/**
+ * This class does the Reflection operations
+ */
+
 public class ReflectionExample {
 
 	public static String[] addElement(String[] array, String element) {
@@ -28,6 +32,12 @@ public class ReflectionExample {
 		}
 		return i;
 	}
+
+	/**
+	 * This method extract field name from an object and returns the header for the JTable
+	 * @param object
+	 * @return
+	 */
 	public static String[] retrieveProperties(Object object) {
 
 		String[] columnNames = new String[0];
@@ -47,9 +57,11 @@ public class ReflectionExample {
 	}
 
 
-
-
-
+	/**
+	 * This method extract the field values from an object and returns it
+	 * @param object
+	 * @return
+	 */
 
 	public  Object[]  getRows(Object object) {
 

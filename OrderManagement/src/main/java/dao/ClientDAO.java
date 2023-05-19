@@ -11,6 +11,10 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * This class contains the data access to the database and run the queries for client operations
+ */
+
 public class ClientDAO implements GenericDAO<Client>
 {
 

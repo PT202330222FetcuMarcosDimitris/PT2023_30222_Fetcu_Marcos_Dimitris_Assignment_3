@@ -11,6 +11,10 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * This class contains the data access to the database and run the queries for order operations
+ */
+
 public class OrderDAO implements GenericDAO<Order>
 {
     protected static final Logger LOGGER = Logger.getLogger(OrderDAO.class.getName());

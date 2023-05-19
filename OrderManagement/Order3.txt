@@ -1,0 +1,9 @@
+2023.05.18.21.09.46
+
+
+
+Order ID: 3
+Client ID: 1
+Product ID: 4
+Quantity: 1
+Total Price: 6.0

@@ -1,5 +1,10 @@
 package model;
 
+/**
+ * @Author: Fetcu Marcos Dimitris
+ * TP Assignment3
+ * @Since: May 18, 2023
+ */
 public class Client
 {
     private int id;
@@ -7,6 +12,15 @@ public class Client
     private String email;
     private String phoneNumber;
     private String address;
+
+    /**
+     * This is the constructor for a client. This class only has setters and getters
+     * @param id
+     * @param name
+     * @param email
+     * @param phoneNumber
+     * @param adress
+     */
 
     public Client(int id, String name, String email, String phoneNumber, String adress)
     {

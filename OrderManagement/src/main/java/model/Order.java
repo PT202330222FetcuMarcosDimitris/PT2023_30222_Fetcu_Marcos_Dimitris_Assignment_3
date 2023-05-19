@@ -4,6 +4,12 @@ import dao.ProductDAO;
 
 import java.util.ArrayList;
 
+/**
+ * @Author: Fetcu Marcos Dimitris
+ * TP Assignment3
+ * @Since: May 18, 2023
+ */
+
 public class Order
 {
     private int id;
@@ -11,6 +17,14 @@ public class Order
     private int productId;
     private int quantity;
     private Double price;
+
+    /**
+     * This is the constructor for an order. This class only has setters and getters
+     * @param id
+     * @param clientId
+     * @param productId
+     * @param quantity
+     */
 
     public Order(int id, int clientId, int productId, int quantity)
     {

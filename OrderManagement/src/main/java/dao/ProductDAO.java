@@ -10,6 +10,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+/**
+ * This class contains the data access to the database and run the queries for product operations
+ */
 
 public class ProductDAO implements GenericDAO<Product>
 {

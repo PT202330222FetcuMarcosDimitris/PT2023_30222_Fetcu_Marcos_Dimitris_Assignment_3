@@ -9,10 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @Author: Technical University of Cluj-Napoca, Romania Distributed Systems
- *          Research Laboratory, http://dsrl.coned.utcluj.ro/
- * @Since: Apr 03, 2017
- * @Source: http://theopentutorials.com/tutorials/java/jdbc/jdbc-mysql-create-database-example/
+ * This class establish the connection with the database
  */
 public class ConnectionFactory {
 

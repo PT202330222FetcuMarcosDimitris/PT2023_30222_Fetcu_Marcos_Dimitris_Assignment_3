@@ -11,15 +11,25 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This Class does the operations on the Order database
+ */
+
 public class OrderBLL
 {
     private static OrderDAO o = new OrderDAO();
 
     private static List<Validator<Order>> valid=new ArrayList<Validator<Order>>();
 
+
+
     public OrderBLL()
     {
         valid.add(new StockValidator());
+
+        /**
+         * An object (type Order) is verified if it has valid inputs and is added to the database
+         */
     }
     public static void add(Order newOrder)
     {
@@ -53,6 +63,10 @@ public class OrderBLL
         }
     }
 
+    /**
+     * this method provides the JTable that is displayed in the interface
+     * @return JTable
+     */
     public static JTable view(){
         ArrayList<Order> orders=o.viewAll();
         JTable table=o.viewAll2(orders);

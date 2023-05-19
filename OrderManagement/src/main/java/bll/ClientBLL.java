@@ -9,6 +9,10 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This Class does the operations on the Client database
+ */
+
 public class ClientBLL
 {
     private static ClientDAO c=new ClientDAO();
@@ -19,6 +23,10 @@ public class ClientBLL
         valid.add(new EmailValidator());
     }
 
+    /**
+     * An object (type Client) is verified if it has valid inputs and is added to the database
+     * @param client
+     */
     public static void add(Client client)
     {
         try
@@ -37,6 +45,10 @@ public class ClientBLL
         return c.findById(id);
     }
 
+    /**
+     * This method provides the id to be deleted from the table
+     * @param id
+     */
     public static void delete(int id){
         try{
                 c.delete(id);
@@ -48,6 +60,11 @@ public class ClientBLL
         }
     }
 
+    /**
+     * This method updates a client by id
+     * @param id
+     * @param client
+     */
     public static void updateClient(int id,Client client)
     {
         try{
@@ -58,6 +75,10 @@ public class ClientBLL
 
     }
 
+    /**
+     * this method provides the JTable that is displayed in the interface
+     * @return JTable
+     */
     public static JTable afisareClient(){
         ArrayList<Client> clients=c.viewAll();
        JTable table=c.viewAll2(clients);
